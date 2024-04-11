@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black and White Spa</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>   
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+            <span class="navbar-brand text-light">Black and White Spa</span>
+        </div>
+        
+    </nav>
+    <section>  
+        <div class="row g-3 align-items-center justify-content-center py-5">
+            <div class="col-md-6">
+                <h2 class="text-center text-light">Transformando a escala de grises</h2>
+                <form action="http://localhost:3000/transformar" method="post">
+                    <label for="urlImagen" class="form-label text-light">URL imagen: </label>
+                    <input type="url" class="form-control" id="urlImagen" name="urlImagen" aria-describedby="imagenHelp" required>
+                    <div id="imagenHelp" class="form-text text-light">Comparte tu imagen para transformarla.</div>
+                    <button type="submit" class="btn btn-success">Transformar!</button>
+                </form> 
+            </div>            
+        </div>  
+    </section>
+
+    <!-- bootstrap js -->
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
