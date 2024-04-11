@@ -19,6 +19,7 @@ app.use(express.static(join(__dirname, "public")));
 app.use("/css", express.static(join(__dirname + "/node_modules/bootstrap/dist/css")));
 app.use("/js", express.static(join(__dirname, "/node_modules/bootstrap/dist/js")));
 
+// middleware para procesar datos de formularios HTML enviados mediante el método POST
 app.use(express.urlencoded({ extended: true }));
 
 // Definir ruta principal ("/index.html")
